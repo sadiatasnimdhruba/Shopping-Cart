@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>Shopping Cart</title>
+    <style>
+         h2{
+         	color:#2b0078;
+         	font-weight: bold;
+         }
+         .tr
+         {
+         	color:#5627ff;
+         	font-weight: bold;
+         }
+         .btn
+         {
+         	color:#254453;
+         	background-color: #99dfff;
+         	font-weight: bold;
+         	border :2px solid #425fff;
+         }
+
+         	.success
+    	{
+    		color :#000;
+    		margin :5px 0 15px 0;
+    		padding :5px;
+    		background-color: #80ff60;
+    	}
+ 
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h2>Product List</h2>
+		<div class="head">
+		<table class="u-full-width">
+			<tr class="tr">
+				<th>Product Name</th>
+				<th>Product Price</th>
+				<th>Add to cart or not</th>
+			</tr>
+			<tr class="product-table">
+				<th class="productname">Realme 7i</th>
+				<th  class="productprice">17,990/=</th>
+				<th><button class="btn" onclick="addToCart1()">Add to cart</button></th>
+			</tr>
+				<tr class="product-table">
+				<th class="productname">Samsung Galaxy M01</th>
+				<th  class="productprice">11,499/=</th>
+				<th><button class="btn" onclick="addToCart2()">Add to cart</button></th>
+			</tr>
+				<tr class="product-table">
+				<th class="productname">OPPO A1K</th>
+				<th  class="productprice">10,990/=</th>
+			<th><button class="btn" onclick="addToCart3()">Add to cart</button></th>
+				</tr>
+		</table>
+	</div>
+
+		<table class="u-full-width">
+  	<thead>
+        		<tr class="tr">
+        			<th>Product Name</th>
+        			<th>Product Price</th>
+        		</tr>
+        	</thead>
+        	<tbody id="Product-list">
+        	</tbody>
+		</table>
+	</div>
+	<script src="script1.js"></script>
+</body>
+</html>
